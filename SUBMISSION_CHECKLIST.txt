@@ -1,0 +1,23 @@
+COGNIFYZ INTERNSHIP — FINAL CHECKLIST
+
+Candidate: Manda Nikitha
+Domain: Web Development
+
+LEVEL 1
+[ ] Task 1 - HTML/CSS
+[ ] Task 2 - JavaScript
+
+LEVEL 2
+[ ] Task 1 - Front-end Frameworks
+[ ] Task 2 - Responsive Design
+
+BEFORE UPLOAD
+[ ] Open every index.html and test it
+[ ] Test Level 1 Task 2 color button
+[ ] Test Level 1 Task 2 greeting button
+[ ] Test Level 1 Task 2 calculator
+[ ] Test Level 1 Task 1 form
+[ ] Test Level 2 Task 2 hamburger menu
+[ ] Resize browser and test responsiveness
+[ ] ZIP the complete Cognifyz_Web_Development_Internship_Manda_Nikitha folder
+[ ] Upload the ZIP through the official Cognifyz submission form

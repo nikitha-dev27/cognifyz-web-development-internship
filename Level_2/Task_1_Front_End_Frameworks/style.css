@@ -1,0 +1,205 @@
+/* Basic styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f5f5;
+
+    color: #333;
+}
+
+
+/* Header */
+
+.header {
+    background-color: #222;
+
+    color: white;
+
+    padding: 30px 0;
+
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0 0 5px;
+
+    font-size: 30px;
+}
+
+.header p {
+    margin: 0;
+
+    color: #cccccc;
+}
+
+
+/* Introduction */
+
+.intro {
+    background-color: white;
+
+    padding: 50px 0;
+
+    text-align: center;
+}
+
+.intro h2 {
+    margin-bottom: 15px;
+
+    color: #222;
+}
+
+.intro p {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #555;
+
+    line-height: 1.6;
+}
+
+
+/* Section heading */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    color: #222;
+}
+
+.section-text {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 35px;
+}
+
+
+/*
+   Bulma card customization
+*/
+
+.card {
+    height: 100%;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card-image img {
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content .title {
+    color: #222;
+}
+
+.card-content .content {
+    color: #555;
+
+    line-height: 1.6;
+}
+
+
+/* Message */
+
+.message-text {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #287a45;
+
+    font-weight: bold;
+}
+
+
+/* Information section */
+
+.info-section {
+    background-color: #e9e9e9;
+
+    padding: 50px 0;
+
+    text-align: center;
+}
+
+.info-section h2 {
+    margin-bottom: 15px;
+}
+
+.info-section p {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #555;
+
+    line-height: 1.7;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Mobile screens */
+
+@media (max-width: 576px) {
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .intro {
+        padding: 40px 20px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+}

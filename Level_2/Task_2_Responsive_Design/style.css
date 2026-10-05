@@ -1,0 +1,372 @@
+/* Basic styling */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    color: #333;
+
+    background-color: #f5f5f5;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+header {
+    background-color: #222;
+
+    color: white;
+}
+
+.navbar {
+    width: 90%;
+
+    max-width: 1100px;
+
+    height: 70px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0;
+
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #61dafb;
+}
+
+
+/* Hamburger button */
+
+.menu-button {
+    display: none;
+
+    border: none;
+
+    background-color: #444;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   Home section
+========================= */
+
+.home {
+    min-height: 500px;
+
+    padding: 80px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #e9f2ff;
+}
+
+.home-content {
+    max-width: 650px;
+}
+
+.home h1 {
+    font-size: 48px;
+
+    margin-bottom: 20px;
+
+    color: #222;
+}
+
+.home p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+
+    padding: 11px 20px;
+
+    background-color: #222;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #444;
+}
+
+
+/* =========================
+   General sections
+========================= */
+
+.section {
+    padding: 70px 8%;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+.section h2,
+.contact h2 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+    color: #222;
+}
+
+.section > p {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #555;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Service boxes
+========================= */
+
+.services {
+    background-color: #f5f5f5;
+}
+
+.service-container {
+    max-width: 1100px;
+
+    margin: 35px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.service-box {
+    background-color: white;
+
+    padding: 25px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    text-align: left;
+}
+
+.service-box h3 {
+    margin-top: 0;
+
+    color: #222;
+}
+
+.service-box p {
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Contact
+========================= */
+
+.contact {
+    padding: 70px 8%;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.contact p {
+    color: #555;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    padding: 20px;
+
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 800px) {
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 65px;
+    }
+
+
+    /* Show hamburger */
+
+    .menu-button {
+        display: block;
+    }
+
+
+    /* Hide navigation links */
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 65px;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 20px;
+
+        background-color: #222;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+
+    /* Show menu when JavaScript adds "show" */
+
+    .nav-links.show {
+        display: flex;
+    }
+
+
+    .home {
+        min-height: 400px;
+
+        padding: 60px 7%;
+
+        text-align: center;
+
+        justify-content: center;
+    }
+
+    .home h1 {
+        font-size: 34px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+
+    .section,
+    .contact {
+        padding: 55px 7%;
+    }
+
+    .section h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+
+    /* One column on mobile */
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+}
